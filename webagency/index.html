@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Webagency est une agence Web capable de réaliser tout vos projets.">
+        <meta name="author" content="Arnaud Chapeleur">
+        <meta property="og:title" content="Webagency - Agence Web à Paris">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://arnaudchapeleur.fr/webagency/">
+        <meta property="og:image" content="http://arnaudchapeleur.fr/webagency/img/main-feature.png">
+        <title>Webagency - Agence Web à Paris</title>
+        <link rel="icon" href="img/icon.png">
+        <link href="css/stylesheet.css" rel="stylesheet">
+        <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="home">
+            <!-- Navigation -->
+            <nav id="mainNav">
+                <a href="#home"><img src="img/logo.png" alt="webagency Paris logo accueil"></a>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- Slider -->
+            <div id="slideshow">
+                <ul id="slides">
+                    <li><img src="img/slider/bg1.jpg" alt="webagency slider accueil"></li>
+                    <li><img src="img/slider/bg2.jpg" alt="webagency slider accueil"></li>
+                </ul>
+            </div>
+            <a href="#slides" id="arrowLeft" class="arrow"><i class="fa fa-angle-left"></i></a>
+            <a href="#slideshow" id="arrowRight" class="arrow"><i class="fa fa-angle-right"></i></a>
+            <!-- Intro -->
+            <div id="intro">
+                <h1><span>Webagency</span> : L'agence de tous vos projets !</h1>
+                <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser !</p>
+                <a href="#services" class="button">Plus d'infos</a>
+            </div>
+        </header>
+        
+        <!-- Services -->
+        <section id="services" class="mainSections">
+            <!-- Title -->
+            <div class="title">
+                <h2>Nos services</h2>
+                <span class="line"></span>
+                <span class="fa fa-circle circle"></span>
+                <span class="line"></span>
+                <p>La WebAgency propose de nombreuses solutions pour vos projets de création de site web, afin de dynamiser votre présence en ligne.</p>
+            </div>
+            <!-- Content -->
+            <div id="content">
+                <aside>
+                    <img src="img/main-feature.png" alt="Services web design WebAgency Paris">
+                </aside>
+                <article>
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <span class="fa fa-circle circle"></span>
+                                <i class="fa fa-line-chart"></i>
+                            </div>
+                            <div class="details">
+                                <h3>UX design</h3>
+                                <p> Nous prenons en compte les attentes et besoins de l’utilisateur afin de créer des sites accessibles, faciles à prendre en main et efficients.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="fa fa-circle circle"></span>
+                                <i class="fa fa-cubes"></i>
+                            </div>
+                            <div class="details">
+                                <h3>UI design</h3>
+                                <p>Nous optimisons au maximum l'interface utilisateur pour une meilleure interaction de celui-ci avec le produit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <span class="fa fa-circle circle"></span>
+                                <i class="fa fa-pie-chart"></i>
+                            </div>
+                            <div class="details">
+                                <h3>SEO</h3>
+                                <p>Notre équipe utilise un ensemble de technique pour optimiser la visibilité de votre site auprès des moteurs de recherche.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Portfolio -->
+        <section id="portfolio" class="mainSections">
+            <!-- Title -->
+            <div class="title">
+                <h2>Nos projets</h2>
+                <span class="line"></span>
+                <span class="fa fa-circle circle"></span>
+                <span class="line"></span>
+                <p>Voici une selections de quelques-unes de nos réalisations.</p>
+            </div>
+            <!-- Projects -->
+            <div id="projects">
+                <!-- Menu -->
+                <input id="all" name="btn" type="radio" checked>
+                <input id="select1" name="btn" type="radio">
+                <input id="select2" name="btn" type="radio">
+                <input id="select3" name="btn" type="radio">
+                <nav>
+                    <ul>
+                        <li>
+                            <label for="all" class="labelAll">All Works</label>
+                            <div class="triangle"></div>
+                        </li>
+                        <li>
+                            <label for="select1" class="label1">Creative</label>
+                            <div class="triangle"></div>
+                        </li>
+                        <li>
+                            <label for="select2" class="label2">Corporate</label>
+                            <div class="triangle"></div>
+                        </li>
+                        <li>
+                            <label for="select3" class="label3">Portfolio</label>
+                            <div class="triangle"></div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Projects images -->
+                <section>
+                        <figure class="type1">
+                            <img src="img/portfolio/01.jpg" alt="Portfolio Lunetterie logo site">
+                            <figcaption>
+                                <h3>La lunetterie</h3>
+                                <p>Logo | Site internet</p>
+                                <a href="img/portfolio/01.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type1">
+                            <img src="img/portfolio/02.jpg" alt="Portfolio Bunnyman logo site">
+                            <figcaption>
+                                <h3>BunnyMan</h3>
+                                <p>Logo | Site internet</p>
+                                <a href="img/portfolio/02.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type2">
+                            <img src="img/portfolio/03.jpg" alt="Portfolio Pompadour logo site e-commerce">
+                            <figcaption>
+                                <h3>Pompadour</h3>
+                                <p>Site E-Commerce</p>
+                                <a href="img/portfolio/03.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type3">
+                            <img src="img/portfolio/04.jpg" alt="Portfolio Marc Vigier">
+                            <figcaption>
+                                <h3>Marc Vigier</h3>
+                                <p>Portfolio</p>
+                                <a href="img/portfolio/04.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type2">
+                            <img src="img/portfolio/05.jpg" alt="Portfolio site PSD mockup">
+                            <figcaption>
+                                <h3>PSD Mockup</h3>
+                                <p>Site Internet</p>
+                                <a href="img/portfolio/05.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type1">
+                            <img src="img/portfolio/06.jpg" alt="Portfolio Escape design site">
+                            <figcaption>
+                                <h3>Escape</h3>
+                                <p>Design | Site Internet</p>
+                                <a href="img/portfolio/06.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type2">
+                            <img src="img/portfolio/07.jpg" alt="Portfolio site SpyRocket">
+                            <figcaption>
+                                <h3>SpyRocket</h3>
+                                <p>Site Internet</p>
+                                <a href="img/portfolio/07.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                        <figure class="type3">
+                            <img src="img/portfolio/08.jpg" alt="Portfolio Eric Tulier">
+                            <figcaption>
+                                <h3>Éric Tulier</h3>
+                                <p>Portfolio</p>
+                                <a href="img/portfolio/08.jpg" class="fa fa-eye"></a>
+                            </figcaption>
+                        </figure>
+                </section>
+            </div>
+        </section>
+        
+        <!-- Contact -->
+        <section id="contact" class="mainSections">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1O67xfURUwVFhlXVdXUc85chodPk"></iframe>
+            <form>
+                <h3>Contact info</h3>
+                <p>
+                    <strong>Webagency SAS</strong><br>
+                    25 Rue d'Hauteville<br>
+                    75010 Paris<br>
+                    Tel : 01 02 03 04 05
+                </p>
+                <input type="text" name="name" placeholder="Name" size="50" id="name">
+                <input type="email" name="email" placeholder="Email" size="50" id="email">
+                <input type="text" name="subject" placeholder="Subject" size="50" id="subject">
+                <textarea name="message" placeholder="Message" rows="10" cols="50" id="message"></textarea>
+                <input type="submit" value="Send Message" id="submit" class="button">
+            </form>
+        </section>
+    </body>
+</html>
