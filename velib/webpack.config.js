@@ -7,17 +7,15 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : false,
   entry: "./js/main.js",
   module: {
-    loaders: [
-      {
-        test: /\.jsx?$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['es2015', 'stage-0'],
-          plugins: ['transform-decorators-legacy', 'transform-class-properties'],
-        }
+    loaders: [{
+      test: /\.jsx?$/,
+      exclude: /(node_modules|bower_components)/,
+      loader: 'babel-loader',
+      query: {
+        presets: ['es2015', 'stage-0'],
+        plugins: ['transform-decorators-legacy', 'transform-class-properties'],
       }
-    ]
+    }]
   },
   output: {
     path: __dirname + "/src/",
@@ -26,6 +24,9 @@ module.exports = {
   plugins: debug ? [] : [
     new webpack.optimize.DedupePlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({ mangle: false, sourcemap: false }),
+    new webpack.optimize.UglifyJsPlugin({
+      mangle: false,
+      sourcemap: false
+    }),
   ],
 };
