@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Paris - Vélib' - vélos en libre-service à Paris - Site Officiel</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="vélos en libre-service à Paris - Site Officiel">
+	<meta name="author" content="Arnaud Chapeleur">
+	<meta property="og:title" content="Paris - Vélib'">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://arnaudchapeleur.fr/velib/">
+	<meta property="og:image" content="img/logo.svg">
+	<link rel="icon" href="img/favicon.ico">
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	    crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	    crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Header -->
+	<header>
+		<div id="banner" class="text-center">
+			<img src="img/cover.png" class="img-responsive" alt="">
+		</div>
+		<!-- Slideshow -->
+		<div id="slideshow">
+			<div class="selected">
+				<div class="text-center">
+					<img src="img/logo.svg" class="img-responsive" alt="">
+					<h2 class="text-center">Bienvenue !</h2>
+					<p class="text-center">Vélib' est le méilleur moyen de se déplacer dans la ville de Paris.
+						<br>Si vous souhaitez réserver un vélo, nous vous invitons à suivre notre guide,
+						<br>qui vous expliquera comment réserver facilement votre vélo en ligne.</p>
+					<button class="btn btn-lg btn-success">Comment réserver</button>
+				</div>
+			</div>
+			<div class="next">
+				<div class="card">
+					<img src="img/logo.svg">
+				</div>
+			</div>
+			<div class="nextSecond">
+				<div class="card">
+					<img src="img/logo.svg">
+				</div>
+			</div>
+			<div class="hideNext">
+				<div class="card">
+					<img src="img/logo.svg">
+				</div>
+			</div>
+		</div>
+		<div id="controls">
+			<button id="previous" class="btn btn-lg btn-success disabled">
+				<i class="fa fa-arrow-circle-left"></i>
+			</button>
+			<button id="next" class="btn btn-lg btn-success">
+				<i class="fa fa-arrow-circle-right"></i>
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<h2>My Google Maps Demo</h2>
+		<div id="map" style="height: 1000px; width: 100%;"></div>
+	</main>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		
+	<!-- My JavaScript -->
+	<script src="js/slideshow.js"></script>
+	<script src="js/stations.js"></script>
+	<script src="js/map.js"></script>
+
+	<!-- Google Maps API -->
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCChPXWOG9ZwKe9n8-o_tIsNznMe3lZ8KA&callback=initMap"></script>	
+</body>
+
+</html>
